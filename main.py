@@ -104,7 +104,7 @@ if __name__ == "__main__":
     args = ap.parse_args()
 
     if args.verbose:
-        logging.basicConfig(filename=('logfile_' + str(args.execution) + '.log'),
+        logging.basicConfig(filename=('logs/logfile_' + str(args.execution) + '.log'),
                             filemode='a',level=logging.DEBUG)
 
     logging.debug(args)
